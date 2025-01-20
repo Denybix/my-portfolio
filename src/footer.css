@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-style {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-style p {
+    font-size: 1rem;
+    text-align: center; 
+    color: #333;
+    margin: 0; 
+    padding: 0 1rem; 
+}
+
+@media (max-width: 768px) {
+    .footer-style p {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-style p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+}
