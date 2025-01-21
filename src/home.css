@@ -11,26 +11,29 @@ body {
     background: linear-gradient(to right, #f0ede5, #d4cbc0);
     font-family: Arial, sans-serif;
     width: 100vw;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
-.introduction, .about, .skills, .projects-section {
-    width: 90%; /* Ensures responsiveness */
-    max-width: 1200px; /* Prevents oversized content */
-    margin: 20px auto;
-    padding: 1rem;
-    border-radius: 2rem;
-    text-align: center;
-}
-
-/* Introduction Section */
 .introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px auto 0;
+    width: 100rem;
+    user-select: none;
     background: linear-gradient(to right, #000b4e, #0057e7);
+    padding: 1rem;
+    border-radius: 2rem;
     color: white;
+    text-align: center;
+}
+
+.work-buttons
+{
+    width: 32%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .introduction .profile-img {
@@ -41,31 +44,63 @@ body {
     margin-bottom: 2rem;
 }
 
-.work-buttons {
-    width: 100%; /* Makes buttons responsive */
-    max-width: 600px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1rem;
+.introduction span {
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom: 1rem;
 }
 
-/* About Section */
 .about {
+    width: 100rem;
+    text-align: center;
     background: linear-gradient(to right, #ff9a8b, #ffbb8a);
+    border-radius: 2rem;
+    padding: 2rem;
+    user-select: none;
+    margin: 4rem auto 0;
 }
 
-/* Skills Section */
+.about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .skills {
-    background: linear-gradient(to right, #ffb84d, #ffcd4d);
+    text-align: center;
     padding: 2rem;
+    background: linear-gradient(to right, #ffb84d, #ffcd4d);
+    border-radius: 2rem;
+    width: 100rem;
+    user-select: none;
+    padding: 3rem;
+    margin: 4rem auto 0;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     color: white;
 }
 
 .skill-list {
     display: flex;
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.frontend {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tools {
+    display: flex;
     justify-content: center;
-    gap: 1rem;
+    margin-right: 6rem;
+}
+
+.tools .skill {
+    margin-left: 6rem;
 }
 
 .skill {
@@ -82,27 +117,90 @@ body {
     transform: scale(1.1);
 }
 
-/* Projects Section */
+.skill i {
+    font-size: 2.5rem;
+    user-select: none;
+}
+
+.skill span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.skill .fa-html5 {
+    color: #E44D26;
+}
+
+.skill .fa-css3-alt {
+    color: #1572B6;
+}
+
+.skill .fa-js-square {
+    color: #F7DF1E;
+}
+
+.skill .fa-react {
+    color: #61DAFB;
+}
+
+.skill .fa-github {
+    color: #333;
+}
+
+.skill .fa-cogs {
+    color: #00A9E0;
+}
+
 .projects-section {
+    width: 100rem;
+    text-align: justify;
     background: linear-gradient(to right, #4e54c8, #8f94fb);
+    border-radius: 2rem;
+    padding: 2rem;
+    user-select: none;
     color: #f1f1f1;
+    margin: 4rem auto 0;
 }
 
 .projects-section h2 {
+    text-align: center;
     margin-bottom: 1rem;
     color: #ffd700;
 }
 
-.projects-section .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.projects-section h3 {
+    margin-left: 2rem;
+    margin-bottom: 10px;
+    color: #ffae42;
 }
 
-/* Media Queries */
+.projects-section h4 {
+    color: #ffcc80;
+}
+
+.projects-section .projects {
+    margin-left: 4rem;
+}
+
+.projects-section .projects ul {
+    margin-bottom: 20px;
+}
+
+.projects-section .projects li {
+    margin-left: 2rem;
+}
+
+
 @media (max-width: 768px) {
-    .introduction, .about, .skills, .projects-section {
-        width: 95%;
+    body {
+        width: 166%;
+    }
+
+    .introduction {
+        width: 90%;
+        max-width: 600px;
         padding: 1rem;
     }
 
@@ -111,33 +209,195 @@ body {
         width: 150px;
     }
 
-    .work-buttons {
-        flex-wrap: wrap;
-        gap: 1rem;
+    .about, .skills, .projects-section {
+        width: 90%;
+        max-width: 600px;
+        padding: 1.5rem;
     }
 
-    .skill-list {
+    .skills .frontend, .skills .tools {
         flex-direction: column;
         gap: 1rem;
     }
-}
 
-@media (max-width: 480px) {
+    .tools .skill {
+        margin-left: 0;
+    }
+
+    .projects-section .projects {
+        margin-left: 0;
+    }
+
+    .projects-section h4 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 390px) and (min-width: 390px) and (max-height:844px) and (min-height:844px)
+{
+    body
+    {
+        overflow-x: hidden;
+        width: 190vw !important;
+    }
+    
+    .introduction {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .introduction .work-buttons
+    {
+        width: 85%;
+    }
+
+    .about, .skills, .projects-section {
+        width: 100%;
+        padding: 2rem;
+    }
+
     .introduction .profile-img {
         height: 120px;
         width: 120px;
     }
 
-    .work-buttons {
-        flex-direction: column;
-        gap: 1rem;
+    .skills .frontend{
+        flex-direction: row;
+        align-items: center;
+    } 
+
+    .skills .tools {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 7rem;
+        justify-content: space-evenly;
     }
 
     .skill {
-        width: 100px; /* Smaller skill blocks for narrow screens */
+        width: 124px;
     }
 
-    .projects-section {
+    .projects-section h3
+    {
+        margin-left: 0;
+    }
+
+    .projects-section .front-end-projects
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    .front-end-projects .blog-page, .e-com-page, .to-do-page
+    {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body
+    {
+        overflow-x: hidden;
+        width: 175vw;
+    }
+    
+    .introduction {
+        width: 100%;
         padding: 1rem;
     }
+
+    .introduction .work-buttons
+    {
+        width: 85%;
+    }
+
+    .about, .skills, .projects-section {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .introduction .profile-img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .skills .frontend{
+        flex-direction: row;
+        align-items: center;
+    } 
+
+    .skills .tools {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 7rem;
+        justify-content: space-evenly;
+    }
+
+    .skill {
+        width: 124px;
+    }
+
+    .projects-section h3
+    {
+        margin-left: 0;
+    }
+
+    .projects-section .front-end-projects
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    .front-end-projects .blog-page, .e-com-page, .to-do-page
+    {
+        margin-top: 1rem;
+    }
+}
+
+.front-end-projects
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+}
+
+.blog-page
+{
+    height: 230px;
+    width: 370px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.blog-page:hover
+{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.e-com-page
+{
+    height: 230px;
+    width: 370px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.e-com-page:hover
+{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.to-do-page
+{
+    height: 230px;
+    width: 370px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.to-do-page:hover
+{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
 }
