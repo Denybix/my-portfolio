@@ -32,7 +32,7 @@ const Home = () =>
                 <div className="work-buttons">
                     <button onClick={scrollIntoProjects}>View My Work</button>
                     <button onClick={scrollIntoContacts}>Contact Me</button>
-                    <a href = '/resume.pdf'>
+                    <a href = '/Resume.pdf'>
                         <button>Download Resume</button>
                     </a>
                 </div>
