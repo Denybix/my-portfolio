@@ -192,6 +192,12 @@ body {
     margin-left: 2rem;
 }
 
+.front-end-projects p
+{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
 
 @media (max-width: 768px) {
     body {
