@@ -304,17 +304,22 @@ body {
     .introduction {
         width: 100%;
         padding: 1rem;
+        color: white;
     }
 
     .introduction .work-buttons
     {
         width: 85%;
     }
-
+    
+    .about, .skills 
+    {
+        color: black;
+    }
+    
     .about, .skills, .projects-section {
         width: 100%;
         padding: 2rem;
-        color: black;
     }
 
     .introduction .profile-img {
