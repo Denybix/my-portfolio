@@ -118,12 +118,15 @@ const Home = () =>
                     <div className="front-end-projects">
                         <a href=" https://blogging-site-beryl.vercel.app/" target="_blank" rel="noopener noreferrer">
                             <img src={blog} className="blog-page"></img>
+                            <p>Blogging Site</p>
                         </a>
                         <a href=" https://my-e-commerce-site-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
                             <img src={ecomm} className="e-com-page"></img>
+                            <p>E-Commerce Site</p>
                         </a>
                         <a href=" https://my-todo-list-taupe.vercel.app/" target="_blank" rel="noopener noreferrer">
                             <img src={todo} className="to-do-page"></img>
+                            <p>To-do-list</p>
                         </a>
                     </div>
             </div>
