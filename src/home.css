@@ -321,7 +321,12 @@ body {
         width: 100%;
         padding: 2rem;
     }
-
+    
+    .projects-section, .projects ul li
+    {
+        color: white;
+    }
+    
     .introduction .profile-img {
         height: 120px;
         width: 120px;
