@@ -201,6 +201,13 @@ body {
     margin-bottom: 2rem;
 }
 
+.academic-project-link p
+{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
 .front-end-projects p
 {
     color: white;
@@ -416,6 +423,7 @@ body {
     width: 370px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 .scrap-page:hover
 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
