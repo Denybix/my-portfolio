@@ -192,6 +192,14 @@ body {
     margin-left: 2rem;
 }
 
+.academic-project-link
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 1rem;
+}
+
 .front-end-projects p
 {
     color: white;
