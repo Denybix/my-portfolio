@@ -4,6 +4,7 @@ import profile from "./assets/profilepic.jpg"
 import blog from "./assets/Blogging-site.png"
 import ecomm from "./assets/E-commerce-site.png"
 import todo from "./assets/To-do-list.png"
+import scrap from "./assets/ScrapCraftedFinds.png"
 import "./home.css"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ContactForm from "./ContactForm.jsx"
@@ -100,7 +101,11 @@ const Home = () =>
                                 Technologies used: HTML, CSS, PHP, JavaScript, Python, MySQL.
                             </li>
                         </ul>
-
+                         <a href="http://scrapcraftedfinds.infinityfreeapp.com/project.php" target="_blank" rel="noopener noreferrer">
+                            <img src={scrap} className="scrap-page"></img>
+                            <p>Scrap Crafted Finds</p>
+                        </a>
+                        
                         <ul>
                             <h4>Medicinal Plant detection using Deep Learning Approach</h4>
                             <li>
