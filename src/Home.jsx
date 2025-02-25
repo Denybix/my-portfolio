@@ -101,10 +101,12 @@ const Home = () =>
                                 Technologies used: HTML, CSS, PHP, JavaScript, Python, MySQL.
                             </li>
                         </ul>
-                         <a href="http://scrapcraftedfinds.infinityfreeapp.com/project.php" target="_blank" rel="noopener noreferrer">
-                            <img src={scrap} className="scrap-page"></img>
-                            <p>Scrap Crafted Finds</p>
-                        </a>
+                        <div className="academic-project-link">
+                             <a href="http://scrapcraftedfinds.infinityfreeapp.com/project.php" target="_blank" rel="noopener noreferrer">
+                                <img src={scrap} className="scrap-page"></img>
+                                <p>Scrap Crafted Finds</p>
+                            </a>
+                        </div>
                         
                         <ul>
                             <h4>Medicinal Plant detection using Deep Learning Approach</h4>
