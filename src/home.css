@@ -201,6 +201,12 @@ body {
     margin-bottom: 2rem;
 }
 
+.academic-project-link p
+{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
 
 .academic-project-link-second
 {
