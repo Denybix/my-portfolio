@@ -5,6 +5,7 @@ import blog from "./assets/Blogging-site.png"
 import ecomm from "./assets/E-commerce-site.png"
 import todo from "./assets/To-do-list.png"
 import scrap from "./assets/ScrapCraftedFinds.png"
+import medicinal from "./assets/MedicinalPlants.png"
 import "./home.css"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ContactForm from "./ContactForm.jsx"
@@ -120,7 +121,14 @@ const Home = () =>
                                 Technologies used: Streamlit (Python framework). 
                             </li>
                         </ul>
+                        <div className="academic-project-link">
+                            <a href="https://medicinal-plantsdetection-6qeappwcgagapxiasplm46a.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                               <img src={medicinal} className="streamlit-page"></img>
+                               <p>Medicinal Plants Detection</p>
+                            </a>
+                        </div>
                     </div>
+                
                     <h3>Front-end Projects to showcase</h3>
                     <div className="front-end-projects">
                         <a href=" https://blogging-site-beryl.vercel.app/" target="_blank" rel="noopener noreferrer">
