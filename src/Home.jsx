@@ -121,7 +121,7 @@ const Home = () =>
                                 Technologies used: Streamlit (Python framework). 
                             </li>
                         </ul>
-                        <div className="academic-project-link">
+                        <div className="academic-project-link-second">
                             <a href="https://medicinal-plantsdetection-6qeappwcgagapxiasplm46a.streamlit.app/" target="_blank" rel="noopener noreferrer">
                                <img src={medicinal} className="streamlit-page"></img>
                                <p>Medicinal Plants Detection</p>
