@@ -207,6 +207,21 @@ body {
     text-align: center;
     margin-top: 0.5rem;
 }
+.academic-project-link-second
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.academic-project-link-second p
+{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
 
 .front-end-projects p
 {
@@ -425,6 +440,19 @@ body {
 }
 
 .scrap-page:hover
+{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.streamlit-page
+{
+    height: 230px;
+    width: 370px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.streamlit-page:hover
 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
