@@ -430,6 +430,19 @@ body {
     transform: scale(1.05);
 }
 
+.streamlit-page
+{
+    height: 230px;
+    width: 370px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.streamlit-page:hover
+{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
 .blog-page
 {
     height: 230px;
